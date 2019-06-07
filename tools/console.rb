@@ -3,6 +3,12 @@ require_relative '../config/environment.rb'
 def reload
   load 'config/environment.rb'
 end
+hao = Student.new("hao")
+cathy = Instructor.new("cathy")
+BoatingTest.new(hao, "code", "passed", "john")
+BoatingTest.new(hao, "code", "failed", "john")
+BoatingTest.new(hao, "code", "failed", "cathy")
+
 
 # Insert code here to run before hitting the binding.pry
 # This is a convenient place to define variables and/or set up new object instances,
@@ -10,4 +16,3 @@ end
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
-
